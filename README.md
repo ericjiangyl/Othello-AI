@@ -2,6 +2,8 @@
 
 An Othello/Reversi game with an AI that searches the game tree via a mini-max search with alpha/beta pruning.
 
+![A snapshot of the game](Othello-AI/game illustration.JPG)   
+      
 ### Requirements
 
 A Cygwin terminal or any terminal with Unicode support and 256-color code support
@@ -21,3 +23,6 @@ The Othello AI program is written in C++ and everything is inside one source fil
 The heuristic function is a linear combination of two parts. One is mobility and the other is the board value. Due to the rule of Othello, mobility (number of legal moves you have) is more important than the number of pieces you have on the board. In evaluating the state, the program counts how many legal moves you will be able to choose and times this factor with a high coefficient. The other factor included in heuristic is the board value. Instead of simply counting how many pieces on the board, I assign different weights for different cells on the board. For example, the corner is assigned with a high positive value and places like X squares and C squares are assigned with relatively high negative value since they tend to give away the corners to the opponent. Other places are just plain vanilla positive values with sides and S squares being somewhat higher than the center.
 Exception in using the heuristic function is that when the alpha-beta pruning has searched all the way towards the end game, the program simply counts how many pieces are on the board. Since when the game is at an ending position, what matters is only how many pieces are on the board. 
 
+
+![Illustration of some of the terminology](Othello-AI/heuristic illustration.jpg)
+      

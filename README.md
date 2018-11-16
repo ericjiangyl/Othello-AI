@@ -2,7 +2,7 @@
 
 An Othello/Reversi game with an AI that searches the game tree via a mini-max search with alpha/beta pruning.
 
-![A snapshot of the game](Othello-AI/game illustration.JPG)   
+![A snapshot of the game](https://github.com/ericjiangyl/Othello-AI/blob/master/game%20illustration.JPG)   
       
 ### Requirements
 
@@ -24,5 +24,5 @@ The heuristic function is a linear combination of two parts. One is mobility and
 Exception in using the heuristic function is that when the alpha-beta pruning has searched all the way towards the end game, the program simply counts how many pieces are on the board. Since when the game is at an ending position, what matters is only how many pieces are on the board. 
 
 
-![Illustration of some of the terminology](Othello-AI/heuristic illustration.jpg)
+![Illustration of some of the terminology](https://github.com/ericjiangyl/Othello-AI/blob/master/heuristic%20illustration.jpg)
       
